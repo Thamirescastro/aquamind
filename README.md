@@ -28,3 +28,5 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 3. Instale as dependências:
    ```bash
    pip install -r requirements.txt
+   python src/main.py (Execução)
+   python -m pytest (Validação de Testes)
