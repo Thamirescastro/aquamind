@@ -1,22 +1,29 @@
-# AquaMind 💧
+# AquaMind 💧 - Checklist de Autocuidado e Hidratação
 
-**Versão:** 1.0.0 (Semantic Versioning)
+## 📖 Descrição do Problema Real
+No cenário de trabalho remoto e estudos intensos, é comum que as pessoas negligenciem necessidades básicas. A desidratação e a falta de pausas para alongamento impactam diretamente a produtividade, o foco e a saúde física a longo prazo.
 
-## 📌 Problema Real
-No cenário de trabalho remoto e estudos intensos, é comum esquecermos de necessidades básicas. A desidratação e a falta de pausas para alongamento impactam diretamente a produtividade e a saúde a longo prazo. O **AquaMind** resolve isso oferecendo um controle simples e direto via linha de comando.
+## 💡 Proposta da Solução
+O **AquaMind** é uma aplicação CLI (Interface de Linha de Comando) que permite ao usuário registrar seu consumo de água e gerenciar tarefas essenciais de autocuidado de forma simples e direta, promovendo hábitos saudáveis durante a rotina digital.
 
-## 🛠️ Tecnologias
-- Python 3.12+
-- Pytest (Testes unitários)
-- Flake8 (Análise estática/Linting)
-- GitHub Actions (CI)
+## 👥 Público-alvo
+Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe longos períodos em frente ao computador.
 
-## 🚀 Como Executar
-1. Instale as dependências:
-   `pip install -r requirements.txt`
-2. Rode a aplicação:
-   `python src/main.py`
+## ✨ Funcionalidades Principais
+- Registro rápido de consumo de água (incrementos de 250ml).
+- Monitoramento de metas de hidratação em tempo real.
+- Checklist de tarefas de autocuidado (Meditação e Alongamento).
+- Visualização de status atualizado via terminal.
 
-## 🧪 Testes e Qualidade
-- Para rodar os testes: `python -m pytest`
-- Para análise estática: `python -m flake8 src/`
+## 🛠️ Tecnologias Utilizadas
+- **Linguagem:** Python 3.12+
+- **Testes:** Pytest (Testes Automatizados)
+- **Qualidade/Lint:** Flake8 (Análise Estática)
+- **CI/CD:** GitHub Actions (Workflow de integração contínua)
+
+## ⚙️ Instruções de Instalação e Execução
+1. Certifique-se de ter o Python instalado.
+2. Clone o repositório ou baixe os arquivos.
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
