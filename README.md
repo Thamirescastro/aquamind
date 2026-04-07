@@ -1,4 +1,5 @@
 # AquaMind 💧 - Checklist de Autocuidado e Hidratação
+[![CI Quality Check](https://github.com/Thamirescastro/aquamind/actions/workflows/main.yml/badge.svg)](https://github.com/Thamirescastro/aquamind/actions/workflows/main.yml)
 
 ## 📖 Descrição do Problema Real
 No cenário de trabalho remoto e estudos intensos, é comum que as pessoas negligenciem necessidades básicas. A desidratação e a falta de pausas para alongamento impactam diretamente a produtividade, o foco e a saúde física a longo prazo.
