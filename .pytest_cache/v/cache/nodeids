@@ -1,0 +1,6 @@
+[
+  "tests/test_api.py::test_buscar_clima",
+  "tests/test_hidratacao.py::test_temperatura_alta",
+  "tests/test_hidratacao.py::test_temperatura_baixa",
+  "tests/test_hidratacao.py::test_temperatura_media"
+]
