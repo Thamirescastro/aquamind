@@ -26,7 +26,10 @@ def main():
     elif clima["temperatura"] <= 18:
         print("🥶 Mesmo no frio, não esqueça da água!")
 
+entrega-intermediaria
 from src.logic import SelfCareManager
+from logic import SelfCareManager
+main
 
 def main():
     manager = SelfCareManager()
