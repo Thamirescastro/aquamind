@@ -10,4 +10,8 @@ pytest==9.0.3
 python-dotenv==1.2.2
 requests==2.33.1
 urllib3==2.6.3
+entrega-intermediaria
+pytest==8.0.0
 flake8==7.0.0
+flake8==7.0.0
+main
