@@ -1,2 +1,17 @@
+<<<<<<< HEAD
+certifi==2026.2.25
+charset-normalizer==3.4.6
+colorama==0.4.6
+idna==3.11
+iniconfig==2.3.0
+packaging==26.2
+pluggy==1.6.0
+Pygments==2.20.0
+pytest==9.0.3
+python-dotenv==1.2.2
+requests==2.33.1
+urllib3==2.6.3
+=======
 pytest==8.0.0
 flake8==7.0.0
+>>>>>>> 1da1da58b65346ba78c0f85ee35bd35b0fce28eb
