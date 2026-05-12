@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 from src.api import buscar_clima
 from src.hidratacao import calcular_agua
 
 
 def main():
-    print("=== AquaMind Inteligente 🌿 ===")
+    print(" AquaMind Inteligente 🌿 ")
 
     cidade = input("Digite sua cidade: ")
 
@@ -27,8 +26,7 @@ def main():
     elif clima["temperatura"] <= 18:
         print("🥶 Mesmo no frio, não esqueça da água!")
 
-=======
-from logic import SelfCareManager
+from src.logic import SelfCareManager
 
 def main():
     manager = SelfCareManager()
@@ -51,7 +49,6 @@ def main():
                 print(f"{status_str} {task}")
         elif opcao == "3":
             break
->>>>>>> 1da1da58b65346ba78c0f85ee35bd35b0fce28eb
 
 if __name__ == "__main__":
     main()
