@@ -1,19 +1,33 @@
-import requests
 import os
+from pathlib import Path
+
+import requests
 from dotenv import load_dotenv
 
-load_dotenv()
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
 
 API_KEY = os.getenv("API_KEY")
 
 
 def buscar_clima(cidade):
-    url = (
-        f"https://api.openweathermap.org/data/2.5/weather?"
-        f"q={cidade}&appid={API_KEY}&units=metric&lang=pt_br"
-    )
+    if not API_KEY:
+        return None
 
-    response = requests.get(url)
+    url = "https://api.openweathermap.org/data/2.5/weather"
+
+    params = {
+        "q": cidade,
+        "appid": API_KEY,
+        "units": "metric",
+        "lang": "pt_br",
+    }
+
+    try:
+        response = requests.get(url, params=params, timeout=10)
+    except requests.RequestException:
+        return None
 
     if response.status_code != 200:
         return None
@@ -23,5 +37,5 @@ def buscar_clima(cidade):
     return {
         "cidade": data["name"],
         "temperatura": data["main"]["temp"],
-        "descricao": data["weather"][0]["description"]
+        "descricao": data["weather"][0]["description"],
     }
