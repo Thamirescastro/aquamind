@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaMind</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <div class="badge">self care tracker</div>
+
+            <h1>AquaMind 💧</h1>
+            <p class="subtitle">
+                Descubra sua recomendação de hidratação com base no clima da sua cidade.
+            </p>
+
+            <form method="POST" class="form">
+                <input 
+                    type="text" 
+                    name="cidade" 
+                    placeholder="Digite sua cidade"
+                    required
+                >
+                <button type="submit">Consultar clima</button>
+            </form>
+
+            {% if erro %}
+                <p class="error">{{ erro }}</p>
+            {% endif %}
+
+            {% if resultado %}
+                <div class="result">
+                    <h2>{{ resultado.cidade }}</h2>
+
+                    <div class="info-grid">
+                        <div>
+                            <span>Temperatura</span>
+                            <strong>{{ resultado.temperatura }}°C</strong>
+                        </div>
+
+                        <div>
+                            <span>Clima</span>
+                            <strong>{{ resultado.descricao }}</strong>
+                        </div>
+
+                        <div class="full">
+                            <span>Recomendação diária</span>
+                            <strong>{{ resultado.agua }} litros de água 💧</strong>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

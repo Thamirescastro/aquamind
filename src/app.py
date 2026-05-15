@@ -1,29 +1,33 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from src.api import buscar_clima
 from src.hidratacao import calcular_agua
 
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
-    cidade = "Brasilia"
+    resultado = None
+    erro = None
 
-    clima = buscar_clima(cidade)
+    if request.method == "POST":
+        cidade = request.form.get("cidade")
 
-    if clima is None:
-        return "Erro ao buscar clima!"
+        if cidade:
+            clima = buscar_clima(cidade)
 
-    temperatura = clima["temperatura"]
-    recomendacao = calcular_agua(temperatura)
+            if clima:
+                recomendacao = calcular_agua(clima["temperatura"])
+                resultado = {
+                    "cidade": clima["cidade"],
+                    "temperatura": clima["temperatura"],
+                    "descricao": clima["descricao"],
+                    "agua": recomendacao,
+                }
+            else:
+                erro = "Não consegui buscar o clima dessa cidade. Tente novamente."
 
-    return f"""
-    <h1>AquaMind 🌿</h1>
-    <p><strong>Cidade:</strong> {clima['cidade']}</p>
-    <p><strong>Temperatura:</strong> {temperatura}°C</p>
-    <p><strong>Clima:</strong> {clima['descricao']}</p>
-    <p><strong>Recomendação:</strong> {recomendacao} litros/dia</p>
-    """
+    return render_template("index.html", resultado=resultado, erro=erro)
 
 
 if __name__ == "__main__":
