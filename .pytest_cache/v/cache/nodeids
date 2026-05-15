@@ -2,5 +2,7 @@
   "tests/test_api.py::test_buscar_clima",
   "tests/test_hidratacao.py::test_temperatura_alta",
   "tests/test_hidratacao.py::test_temperatura_baixa",
-  "tests/test_hidratacao.py::test_temperatura_media"
+  "tests/test_hidratacao.py::test_temperatura_media",
+  "tests/test_logic.py::test_add_water",
+  "tests/test_logic.py::test_invalid_water"
 ]
