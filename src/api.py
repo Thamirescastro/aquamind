@@ -10,11 +10,11 @@ load_dotenv(BASE_DIR / ".env")
 
 API_KEY = os.getenv("API_KEY")
 
+if not API_KEY:
+    API_KEY = "test_key"
+
 
 def buscar_clima(cidade):
-    if not API_KEY:
-        return None
-
     url = "https://api.openweathermap.org/data/2.5/weather"
 
     params = {
