@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrega Inicial - AquaMind</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <a class="back" href="/">↩</a>
+
+            <div class="badge">entrega inicial</div>
+            <h1>Autocuidado 💧</h1>
+            <p class="subtitle">Registre água, meditação e alongamento.</p>
+
+            {% if mensagem %}
+                <p class="success">{{ mensagem }}</p>
+            {% endif %}
+
+            <form method="POST" class="task-actions">
+                <button name="acao" value="agua">Registrar água</button>
+                <button name="acao" value="meditar">Concluir meditação</button>
+                <button name="acao" value="alongar">Concluir alongamento</button>
+            </form>
+
+            <div class="result">
+                <h2>Status atual</h2>
+                <p><strong>Copos de água:</strong> {{ status.water }}</p>
+
+                <div class="info-grid">
+                    {% for tarefa, concluida in status.tasks.items() %}
+                        <div>
+                            <span>{{ tarefa }}</span>
+                            {% if concluida %}
+                                <strong>Concluída</strong>
+                            {% else %}
+                                <strong>Pendente</strong>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

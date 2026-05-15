@@ -159,3 +159,52 @@ strong {
         grid-template-columns: 1fr;
     }
 }
+
+.home-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 28px 0;
+}
+
+.task-actions button {
+    min-width: 210px;
+}
+
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 15px 24px;
+    background: linear-gradient(135deg, #d98fad, #c67599);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 24px rgba(198, 117, 153, 0.25);
+    transition: 0.25s ease;
+}
+
+.button-link:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(198, 117, 153, 0.35);
+}
+
+.task-actions button {
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d98fad, #c67599);
+    box-shadow: 0 10px 24px rgba(198, 117, 153, 0.22);
+    transition: 0.25s ease;
+}
+
+.task-actions button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(198, 117, 153, 0.35);
+}

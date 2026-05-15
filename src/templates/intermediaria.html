@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrega Intermediária - AquaMind</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <a class="back" href="/">↩</a>
+
+            <div class="badge">entrega intermediária</div>
+            <h1>Clima e Hidratação 🌿</h1>
+            <p class="subtitle">
+                Consulte o clima e receba uma recomendação de água.
+            </p>
+
+            <form method="POST" class="form">
+                <input type="text" name="cidade" placeholder="Digite sua cidade" required>
+                <button type="submit">Consultar</button>
+            </form>
+
+            {% if erro %}
+                <p class="error">{{ erro }}</p>
+            {% endif %}
+
+            {% if resultado %}
+                <div class="result">
+                    <h2>{{ resultado.cidade }}</h2>
+
+                    <div class="info-grid">
+                        <div>
+                            <span>Temperatura</span>
+                            <strong>{{ resultado.temperatura }}°C</strong>
+                        </div>
+
+                        <div>
+                            <span>Clima</span>
+                            <strong>{{ resultado.descricao }}</strong>
+                        </div>
+
+                        <div class="full">
+                            <span>Recomendação</span>
+                            <strong>{{ resultado.agua }} litros/dia 💧</strong>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>
