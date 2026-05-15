@@ -15,21 +15,29 @@ def main():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            total = manager.add_water()
+            total = manager.add_water(1)
             print(f"💧 Copo registrado! Total: {total}")
 
         elif opcao == "2":
-            manager.complete_task("meditação")
+            manager.complete_task("Meditar")
             print("🧘 Meditação concluída!")
 
         elif opcao == "3":
-            manager.complete_task("alongamento")
+            manager.complete_task("Alongar")
             print("🤸 Alongamento concluído!")
 
         elif opcao == "4":
             status = manager.get_status()
-            print(f"Copos de água: {status['copos_agua']}")
-            print(f"Tarefas: {status['tarefas']}")
+
+            print("\nStatus atual:")
+            print(f"Copos de água: {status['water']}")
+
+            print("Tarefas:")
+            for tarefa, concluida in status["tasks"].items():
+                if concluida:
+                    print(f"- {tarefa}: concluída")
+                else:
+                    print(f"- {tarefa}: pendente")
 
         elif opcao == "0":
             print("Saindo do AquaMind...")
