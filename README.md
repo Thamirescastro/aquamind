@@ -11,6 +11,9 @@ O **AquaMind** é uma aplicação CLI (Interface de Linha de Comando) que permit
 Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe longos períodos em frente ao computador.
 
 ## ✨ Funcionalidades Principais
+- Consulta clima em tempo real com OpenWeather API
+- Sugestão de ingestão diária de água
+- Testes automatizados com pytest
 - Registro rápido de consumo de água (incrementos de 250ml).
 - Monitoramento de metas de hidratação em tempo real.
 - Checklist de tarefas de autocuidado (Meditação e Alongamento).
