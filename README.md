@@ -34,25 +34,6 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 - **Qualidade/Lint:** Flake8 (Análise Estática)
 - **CI/CD:** GitHub Actions (Workflow de integração contínua)
 
-## 📂 Estrutura do Projeto
-
-|aquamind/
-├── src/
-│   ├── app.py
-│   ├── api.py
-│   ├── hidratacao.py
-│   ├── logic.py
-│   ├── main.py
-│   ├── main_inicial.py
-│   │
-│   ├── templates/
-│   └── static/
-│
-├── tests/
-├── requirements.txt
-├── README.md
-└── .gitignore
-
 ## ⚙️ **Instalação**
 
 1. Clone o repositório
