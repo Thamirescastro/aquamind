@@ -29,10 +29,17 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 - Deploy online no Render
 
 ## 🛠️ Tecnologias Utilizadas
-- **Linguagem:** Python 3.12+
-- **Testes:** Pytest (Testes Automatizados)
-- **Qualidade/Lint:** Flake8 (Análise Estática)
-- **CI/CD:** GitHub Actions (Workflow de integração contínua)
+
+- **Tecnologia**	Função
+- **Python 3.12+**	            Linguagem principal
+- **Flask**	                     Aplicação web
+- **HTML**                       Estrutura da interface
+- **CSS**	                     Estilização
+- **Pytest**	                  Testes automatizados
+- **Flake**	                     Qualidade e código
+- **GitHub Actions**	            CI/CD
+- **OpenWeather API**	         Dados climáticos
+- **Render**	                  Deploy da aplicação
 
 ## ⚙️ **Instalação**
 
