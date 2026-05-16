@@ -10,6 +10,17 @@ O **AquaMind** é uma aplicação CLI (Interface de Linha de Comando) que permit
 ## 👥 Público-alvo
 Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe longos períodos em frente ao computador.
 
+## 🚀 **Deploy**
+
+**O projeto foi publicado utilizando:**
+
+**Link do Render (Hospedagem em nuvem):**  https://aquamind-77j8.onrender.com
+
+Render
+GitHub Actions
+Deploy automatizado
+
+
 ## ✨ Funcionalidades Principais
 
 💧 **Entrega Inicial**
@@ -40,55 +51,3 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 - **GitHub Actions**	            CI/CD
 - **OpenWeather API**	         Dados climáticos
 - **Render**	                  Deploy da aplicação
-
-## ⚙️ **Instalação**
-
-1. Clone o repositório
-   
-git clone https://github.com/Thamirescastro/aquamind.git
-
-3. Acesse a pasta
-   
-cd aquamind
-
-5. Instale as dependências
-   
-pip install -r requirements.txt
-
-## 🔑 **Configuração da API**
-
-Crie um arquivo .env na raiz do projeto:
-
-API_KEY=sua_chave_openweather
-
-Você pode obter uma chave gratuita em:
-
-https://openweathermap.org/api
-
-## ▶️ **Execução do Projeto**
-
-🌐 **Aplicação Web**
-python -m src.app
-
-Acesse:
-
-http://127.0.0.1:5000
-
-💧 **Entrega Inicial (CLI)**
-
-python -m src.main_inicial
-
-🌿 **Entrega Intermediária (CLI)**
-python -m src.main
-
-🧪 **Executar Testes**
-
-python -m pytest
-
-## 🚀 **Deploy**
-
-**O projeto foi publicado utilizando:**
-
-Render
-GitHub Actions
-Deploy automatizado
