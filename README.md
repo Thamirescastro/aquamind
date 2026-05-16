@@ -36,37 +36,21 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 
 ## 📂 Estrutura do Projeto
 
-aquamind/
-│
-
+|aquamind/
 ├── src/
-
 │   ├── app.py
-
 │   ├── api.py
-
 │   ├── hidratacao.py
-
 │   ├── logic.py
-
 │   ├── main.py
-
 │   ├── main_inicial.py
-
 │   │
-
 │   ├── templates/
-
 │   └── static/
-
 │
-
 ├── tests/
-
 ├── requirements.txt
-
 ├── README.md
-
 └── .gitignore
 
 ## ⚙️ **Instalação**
