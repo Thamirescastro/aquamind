@@ -1,4 +1,4 @@
-# AquaMind 💧 - Checklist de Autocuidado e Hidratação
+# AquaMind 💧 - Checklist de Autocuidado e Hidratação Inteligente!
 [![CI Quality Check](https://github.com/Thamirescastro/aquamind/actions/workflows/main.yml/badge.svg)](https://github.com/Thamirescastro/aquamind/actions/workflows/main.yml)
 
 ## 📖 Descrição do Problema Real
@@ -11,13 +11,22 @@ O **AquaMind** é uma aplicação CLI (Interface de Linha de Comando) que permit
 Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe longos períodos em frente ao computador.
 
 ## ✨ Funcionalidades Principais
-- Consulta clima em tempo real com OpenWeather API
-- Sugestão de ingestão diária de água
-- Testes automatizados com pytest
-- Registro rápido de consumo de água (incrementos de 250ml).
-- Monitoramento de metas de hidratação em tempo real.
-- Checklist de tarefas de autocuidado (Meditação e Alongamento).
-- Visualização de status atualizado via terminal.
+
+💧 **Entrega Inicial**
+- Registro de consumo de água
+- Checklist de autocuidado
+- Controle de meditação
+- Controle de alongamento
+- Exibição de status em tempo real
+
+🌿 **Entrega Intermediária**
+- Integração com OpenWeather API
+- Consulta de clima em tempo real
+- Sugestão automática de ingestão diária de água
+- Interface web com Flask
+- Layout moderno estilo "clean girl"
+- Organização em múltiplas páginas
+- Deploy online no Render
 
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagem:** Python 3.12+
@@ -25,11 +34,74 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 - **Qualidade/Lint:** Flake8 (Análise Estática)
 - **CI/CD:** GitHub Actions (Workflow de integração contínua)
 
-## ⚙️ Instruções de Instalação e Execução
-1. Certifique-se de ter o Python instalado.
-2. Clone o repositório ou baixe os arquivos.
-3. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   python src/main.py (Execução)
-   python -m pytest (Validação de Testes)
+## 📂 Estrutura do Projeto
+
+aquamind/
+│
+├── src/
+│   ├── app.py
+│   ├── api.py
+│   ├── hidratacao.py
+│   ├── logic.py
+│   ├── main.py
+│   ├── main_inicial.py
+│   │
+│   ├── templates/
+│   └── static/
+│
+├── tests/
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+⚙️ **Instalação**
+
+1. Clone o repositório
+   
+git clone https://github.com/Thamirescastro/aquamind.git
+
+3. Acesse a pasta
+   
+cd aquamind
+
+5. Instale as dependências
+   
+pip install -r requirements.txt
+
+🔑 **Configuração da API**
+
+Crie um arquivo .env na raiz do projeto:
+
+API_KEY=sua_chave_openweather
+
+Você pode obter uma chave gratuita em:
+
+https://openweathermap.org/api
+
+▶️ **Execução do Projeto**
+
+🌐 **Aplicação Web**
+python -m src.app
+
+Acesse:
+
+http://127.0.0.1:5000
+
+💧 **Entrega Inicial (CLI)**
+
+python -m src.main_inicial
+
+🌿 **Entrega Intermediária (CLI)**
+python -m src.main
+
+🧪 **Executar Testes**
+
+python -m pytest
+
+🚀 **Deploy**
+
+**O projeto foi publicado utilizando:**
+
+Render
+GitHub Actions
+Deploy automatizado
