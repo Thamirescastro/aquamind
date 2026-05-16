@@ -38,23 +38,38 @@ Trabalhadores remotos, estudantes, desenvolvedores e qualquer pessoa que passe l
 
 aquamind/
 │
+
 ├── src/
+
 │   ├── app.py
+
 │   ├── api.py
+
 │   ├── hidratacao.py
+
 │   ├── logic.py
+
 │   ├── main.py
+
 │   ├── main_inicial.py
+
 │   │
+
 │   ├── templates/
+
 │   └── static/
+
 │
+
 ├── tests/
+
 ├── requirements.txt
+
 ├── README.md
+
 └── .gitignore
 
-⚙️ **Instalação**
+## ⚙️ **Instalação**
 
 1. Clone o repositório
    
@@ -68,7 +83,7 @@ cd aquamind
    
 pip install -r requirements.txt
 
-🔑 **Configuração da API**
+## 🔑 **Configuração da API**
 
 Crie um arquivo .env na raiz do projeto:
 
@@ -78,7 +93,7 @@ Você pode obter uma chave gratuita em:
 
 https://openweathermap.org/api
 
-▶️ **Execução do Projeto**
+## ▶️ **Execução do Projeto**
 
 🌐 **Aplicação Web**
 python -m src.app
@@ -98,7 +113,7 @@ python -m src.main
 
 python -m pytest
 
-🚀 **Deploy**
+## 🚀 **Deploy**
 
 **O projeto foi publicado utilizando:**
 
