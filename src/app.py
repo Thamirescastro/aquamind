@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 from src.api import buscar_clima
 from src.hidratacao import calcular_agua
 from src.logic import SelfCareManager
+from flask import Flask, render_template, request
+from db.crud import registrar_autocuidado, buscar_historico
 
 app = Flask(__name__)
 
