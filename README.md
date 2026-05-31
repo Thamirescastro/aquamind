@@ -54,4 +54,4 @@ O projeto possui esteira de CI/CD configurada via **GitHub Actions** para testes
 | **Render** | Plataforma de nuvem para hospedagem do app |
 
 
-## Integrantes: Thamires Mendonça, Abner Trindade, Julia Marques e Emanuelle Chrstinie 
+## Integrantes: Thamires Mendonça, Abner Trindade, Julia Marques e Emanuelle Christinie 
