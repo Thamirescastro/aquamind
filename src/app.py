@@ -22,8 +22,21 @@ def inicial():
         acao = request.form.get("acao")
 
         if acao == "agua":
-            total = manager.add_water(1)
-            mensagem = f"Copo registrado! Total: {total}"
+            # Agora adiciona um copo de 250ml em vez de apenas 1 unidade
+            total = manager.add_water(250)
+            mensagem = f"Copo de 250ml registrado! Total: {total}ml"
+
+        elif acao == "definir_meta":
+            nova_meta = request.form.get("nova_meta")
+            if nova_meta and nova_meta.isdigit():
+                meta_int = int(nova_meta)
+                if meta_int > 0:
+                    manager.set_water_goal(meta_int)
+                    mensagem = f"Nova meta diária definida para {meta_int}ml!"
+                else:
+                    mensagem = "A meta deve ser maior que zero."
+            else:
+                mensagem = "Por favor, insira um valor válido em mililitros."
 
         elif acao == "meditar":
             manager.complete_task("Meditar")
@@ -33,6 +46,7 @@ def inicial():
             manager.complete_task("Alongar")
             mensagem = "Alongamento concluído!"
 
+        # Atualiza o status após qualquer ação realizada
         status = manager.get_status()
 
     return render_template("inicial.html", status=status, mensagem=mensagem)
