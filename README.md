@@ -53,5 +53,12 @@ O projeto possui esteira de CI/CD configurada via **GitHub Actions** para testes
 | **OpenWeather API** | Serviço de integração para consumo de dados climáticos |
 | **Render** | Plataforma de nuvem para hospedagem do app |
 
+---
+
+## Histórico de Hidratação
+
+O sistema permite consultar os registros de hidratação armazenados no Supabase, possibilitando ao usuário acompanhar seu consumo de água ao longo do tempo.
+
+---
 
 ## Integrantes: Thamires Mendonça, Abner Trindade, Julia Marques e Emanuelle Christinie 
