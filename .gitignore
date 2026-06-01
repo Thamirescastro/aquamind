@@ -1,4 +1,43 @@
+# Variáveis de ambiente
 .env
+.env.*
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# Cache Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Testes
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Ferramentas de análise
+.mypy_cache/
+.ruff_cache/
+
+# Build e distribuição
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
