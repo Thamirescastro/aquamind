@@ -82,7 +82,7 @@ O projeto utiliza Pytest para validação das funcionalidades.
 
 ---
 
-🔄 **Fluxo de Desenvolvimento Colaborativo**
+## 🔄 Fluxo de Desenvolvimento Colaborativo ##
 
 Durante a etapa final do BootCamp, a equipe trabalhou utilizando GitHub Flow:
 
